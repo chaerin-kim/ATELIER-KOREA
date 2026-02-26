@@ -181,6 +181,64 @@
     }
   },
   {
+    "slug": "cheongdo-luostay-onsen",
+    "displayName": "Cheongdo LuoStay",
+    "collectionId": "Ritual",
+    "heroImage": "/images/ritual/ruo-villa.jpg",
+    "galleryImages": [
+      "/images/raw/seoraksan/seoraksan-view.jpg",
+      "/images/raw/seoraksan/seoraksan-hero.jpg"
+    ],
+    "conceptLines": [
+      "Steam rises.",
+      "The mind quiets.",
+      "Heat becomes ritual.",
+      "Silence becomes soft."
+    ],
+    "rarityText": "Most visitors pass through nearby Daegu — few discover a private onsen calm in Cheongdo.",
+    "recommendedNights": 1,
+    "bestSeason": "Winter",
+    "paceTag": "Deep",
+    "stayRecommendations": [
+      {
+        "name": "LuoStay Private Onsen",
+        "description": "A minimalist stay with a private soaking bath — designed for unhurried recovery.",
+        "type": "Wellness",
+        "image": "/images/ritual/ruo-onsen.jpg"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Hanbang Samgyetang",
+        "dish": "Herbal Ginseng Chicken Soup",
+        "description": "Warmth that lingers — medicinal herbs, slow simmer, deep reset.",
+        "type": "Ritual",
+        "image": "/images/ritual/ruo-Hanbang Samgyetang.jpg"
+      }
+    ],
+    "howToArrive": {
+      "time": "2h 40m from Seoul",
+      "method": "KTX to Dongdaegu → local bus to Cheongdo",
+      "transferSimplicity": "1 Transfer"
+    },
+    "piece": {
+      "id": "piece-cheongdo-luostay",
+      "baseName": "The Warm Silence",
+      "question": "What melts away in heat?",
+      "choices": [
+        { "id": "noise", "label": "Noise", "generatedLine": "In the steam, the noise dissolved. I could finally hear myself." },
+        { "id": "tension", "label": "Tension", "generatedLine": "My body softened first. Then my thoughts followed." },
+        { "id": "time", "label": "Time", "generatedLine": "The clock stopped mattering. Only warmth remained." }
+      ],
+      "cardTemplate": "/images/ritual/ruo-villa.jpg" 
+    },
+    "location": {
+      "region": "Cheongdo",
+      "lat": 35.6478,
+      "lng": 128.7332
+    }
+  },
+  {
     "slug": "jeonju-paper-loft",
     "displayName": "Jeonju Paper Loft",
     "collectionId": "Grain",
@@ -297,68 +355,68 @@
     }
   },
   {
-    "slug": "seoul-temple-kitchen",
-    "displayName": "Seoul Temple Kitchen",
+    "slug": "hoengseong-hanwoo-table",
+    "displayName": "Hoengseong Hanwoo Table",
     "collectionId": "Taste",
-    "heroImage": "/images/taste/temple-hero.jpg",
+    "heroImage": "/images/taste/hoengseong-hero.jpg",
     "galleryImages": [
       "/images/taste/gallery1.jpg",
       "/images/taste/gallery2.jpg"
     ],
     "conceptLines": [
-      "Before flavor.",
-      "There was intention.",
-      "Temple cuisine speaks.",
-      "In whispers of tradition."
+      "The finest beef in Korea.",
+      "Is not found in Seoul.",
+      "It waits in a quiet valley.",
+      "Where the cattle roam free."
     ],
-    "rarityText": "Only 3 temples in Seoul offer authentic temple cuisine experiences.",
+    "rarityText": "Hoengseong produces only 2% of Korea's beef — yet ranks first in quality.",
     "recommendedNights": 1,
-    "bestSeason": "All seasons",
-    "paceTag": "Deep",
+    "bestSeason": "Autumn",
+    "paceTag": "Balanced",
     "stayRecommendations": [
       {
-        "name": "Temple Stay Guesthouse",
-        "description": "Sleep where monks once meditated, wake to temple bells.",
-        "type": "Heritage",
+        "name": "Valley Farm Stay",
+        "description": "A pastoral retreat surrounded by the pastures where Hanwoo graze.",
+        "type": "Farm Stay",
         "image": "/images/taste/gallery1.jpg"
       }
     ],
     "tableHighlights": [
       {
-        "name": "Balwoo Gongyang",
-        "dish": "Temple Cuisine Course",
-        "description": "108 ingredients, zero meat. The purest expression of Korean flavors.",
-        "type": "Sacred",
-        "image": "/images/taste/temple-cuisine.jpg"
+        "name": "Hoengseong Hanwoo 1++",
+        "dish": "Premium Grilled Hanwoo",
+        "description": "The highest grade Korean beef, charcoal-grilled at the source. No middleman, no markup.",
+        "type": "Heritage",
+        "image": "/images/taste/hanwoo-grill.jpg"
       },
       {
-        "name": "Lotus Tea Ceremony",
-        "dish": "Traditional Tea Service",
-        "description": "Hand-picked lotus leaves, brewed in silence.",
-        "type": "Ritual",
-        "image": "/images/taste/lotus-tea.jpg"
+        "name": "Yukhoe (Raw Beef Tartare)",
+        "dish": "Korean Beef Tartare",
+        "description": "Silky raw Hanwoo dressed in sesame oil and egg yolk — only possible when the beef is this fresh.",
+        "type": "Local",
+        "image": "/images/taste/yukhoe.jpg"
       }
     ],
     "howToArrive": {
-      "time": "45min from Seoul Station",
-      "method": "Subway Line 3 to Anguk Station",
+      "time": "2h from Seoul",
+      "method": "Express bus from Dong Seoul → Hoengseong",
       "transferSimplicity": "Direct"
     },
     "piece": {
-      "id": "piece-temple-kitchen",
-      "baseName": "The Sacred Meal",
-      "question": "What does mindful eating teach you?",
+      "id": "piece-hoengseong",
+      "baseName": "The First Cut",
+      "question": "What makes a meal unforgettable?",
       "choices": [
-        { "id": "gratitude", "label": "Gratitude for simplicity", "generatedLine": "In each grain of rice, I found abundance." },
-        { "id": "presence", "label": "Being fully present", "generatedLine": "The meal became meditation, the taste became prayer." },
-        { "id": "connection", "label": "Connection to nature", "generatedLine": "I tasted the earth, the rain, the seasons in every bite." }
+        { "id": "origin", "label": "Knowing where it comes from", "generatedLine": "I traced the flavor back to the valley, the grass, the morning dew." },
+        { "id": "simplicity", "label": "When nothing is added", "generatedLine": "The best seasoning was the fire, the wind, and the wait." },
+        { "id": "sharing", "label": "The people at the table", "generatedLine": "The meat was perfect. But it was the company that made it sacred." }
       ],
-      "cardTemplate": "/images/taste/temple-hero.jpg"
+      "cardTemplate": "/images/taste/hoengseong-hero.jpg"
     },
     "location": {
-      "region": "Seoul",
-      "lat": 37.5665,
-      "lng": 126.9780
+      "region": "Hoengseong",
+      "lat": 37.4914,
+      "lng": 127.9858
     }
   },
   {

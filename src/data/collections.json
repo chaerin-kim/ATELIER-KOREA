@@ -13,13 +13,13 @@
     "subtitle": "Timeless practices in modern life.",
     "heroImage": "/images/ritual/hero.jpg",
     "description": "Step into spaces designed for reflection. From ancient temples to minimalist tea rooms, discover the art of doing nothing.",
-    "atelierSlugs": ["andong-silent-house"]
+    "atelierSlugs": ["andong-silent-house", "cheongdo-luostay-onsen"]
   },
   {
     "id": "Grain",
     "title": "Earth's Texture",
     "subtitle": "Warmth from the soil.",
-    "heroImage": "/images/grain/gallery3.jpg",
+    "heroImage": "/images/hero/grain-thumb.jpg",
     "description": "Where tradition meets the earth. Discover ateliers woven with the textures of handmade paper, pottery, and aged wood.",
     "atelierSlugs": ["jeonju-paper-loft"]
   },
@@ -27,7 +27,7 @@
     "id": "Raw",
     "title": "Wild Elements",
     "subtitle": "Unfiltered nature.",
-    "heroImage": "/images/hero/slide-2.jpg",
+    "heroImage": "/images/hero/wild-thumb.jpg",
     "description": "For those who crave the untamed. Volcanic rock, dense forests, and the raw beauty of Korea's wild landscapes.",
     "atelierSlugs": ["jeju-stone-villa", "seoraksan-wellness-retreat"]
   },
@@ -35,8 +35,8 @@
     "id": "Taste",
     "title": "Heritage Flavors",
     "subtitle": "Stories told through taste.",
-    "heroImage": "/images/hero/slide-5.jpg",
+    "heroImage": "/images/hero/tast-thumb.jpg",
     "description": "Where every dish carries centuries of tradition. From temple cuisine to royal court recipes, discover Korea's culinary soul through intimate dining experiences.",
-    "atelierSlugs": ["seoul-temple-kitchen"]
+    "atelierSlugs": ["hoengseong-hanwoo-table"]
   }
 ]
