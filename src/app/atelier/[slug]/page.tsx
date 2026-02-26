@@ -4,9 +4,7 @@ import Link from "next/link";
 import ateliersData from "@/data/ateliers.json";
 import { IAtelier } from "@/types";
 import { AtelierActions } from "@/features/ateliers/components/atelier-actions";
-import { ArrowLeft, Moon, MapPin, Coffee, Utensils } from "lucide-react";
-import { cn } from "@/lib/utils";
-
+import { ArrowLeft, Moon, MapPin, Utensils } from "lucide-react";
 // Generate static params for all ateliers
 export async function generateStaticParams() {
   const ateliers = ateliersData as IAtelier[];
@@ -41,7 +39,7 @@ export default async function AtelierDetailPage({
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/20" />
-        
+
         <div className="absolute top-0 left-0 p-6 z-20">
           <Link href={`/collections/${atelier.collectionId}`} className="text-white/80 hover:text-white flex items-center gap-2 transition-colors">
             <ArrowLeft size={20} /> Back to {atelier.collectionId}
@@ -56,9 +54,9 @@ export default async function AtelierDetailPage({
             {atelier.displayName}
           </h1>
           <div className="flex gap-6 text-sm font-light tracking-wide opacity-90">
-             <span className="flex items-center gap-2"><MapPin size={14} /> {atelier.location.region}</span>
-             <span className="flex items-center gap-2"><Moon size={14} /> {atelier.recommendedNights} Nights</span>
-             <span className="uppercase border border-white/30 px-2 py-0.5 text-xs rounded-full">{atelier.paceTag} Pace</span>
+            <span className="flex items-center gap-2"><MapPin size={14} /> {atelier.location.region}</span>
+            <span className="flex items-center gap-2"><Moon size={14} /> {atelier.recommendedNights} Nights</span>
+            <span className="uppercase border border-white/30 px-2 py-0.5 text-xs rounded-full">{atelier.paceTag} Pace</span>
           </div>
         </div>
       </section>
@@ -74,7 +72,7 @@ export default async function AtelierDetailPage({
         </div>
         <div className="mt-16 pt-8 border-t border-stone-200">
           <p className="text-stone-500 italic font-serif text-lg">
-            "{atelier.rarityText}"
+            &quot;{atelier.rarityText}&quot;
           </p>
         </div>
       </section>
@@ -89,10 +87,13 @@ export default async function AtelierDetailPage({
             {atelier.stayRecommendations.map((stay, idx) => (
               <div key={idx} className="space-y-4 group">
                 <div className="aspect-video bg-stone-100 rounded-sm overflow-hidden relative">
-                  {/* Placeholder for stay image */}
-                  <div className="absolute inset-0 bg-stone-200 flex items-center justify-center text-stone-400 font-light">
-                    Stay Image
-                  </div>
+                  <Image
+                    src={stay.image || atelier.galleryImages[0]}
+                    alt={stay.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-serif text-stone-900">{stay.name}</h3>
@@ -113,16 +114,28 @@ export default async function AtelierDetailPage({
           <h2 className="text-xs uppercase tracking-widest text-stone-400 mb-8 border-b border-stone-200 pb-4">
             The Table
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-12">
             {atelier.tableHighlights.map((table, idx) => (
-              <div key={idx} className="flex gap-4 items-start">
-                <div className="bg-stone-100 p-3 rounded-full text-stone-600">
-                  <Utensils size={18} />
-                </div>
+              <div key={idx} className="group">
+                {table.image ? (
+                  <div className="mb-4 aspect-[4/3] bg-stone-100 rounded-sm overflow-hidden relative">
+                    <Image
+                      src={table.image}
+                      alt={table.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                ) : (
+                  <div className="mb-4 inline-flex items-center justify-center bg-stone-100 w-12 h-12 rounded-full text-stone-600">
+                    <Utensils size={20} />
+                  </div>
+                )}
                 <div>
-                  <h3 className="text-lg font-serif text-stone-900">{table.name}</h3>
-                  <p className="text-stone-500 text-sm mb-1">{table.dish}</p>
-                  <p className="text-stone-600 font-light text-sm">
+                  <h3 className="text-xl font-serif text-stone-900 mb-1">{table.name}</h3>
+                  <p className="text-xs text-stone-500 uppercase tracking-wider mb-3">{table.dish}</p>
+                  <p className="text-stone-600 font-light leading-relaxed">
                     {table.description}
                   </p>
                 </div>
@@ -148,7 +161,7 @@ export default async function AtelierDetailPage({
               <span className="text-stone-500 text-sm">Transfer</span>
               <span className="font-medium">{atelier.howToArrive.transferSimplicity}</span>
             </div>
-            
+
             {atelier.howToArrive.travelMinutesFromSeoul && (
               <p className="text-xs text-stone-400 mt-4 text-center">
                 *Estimated from Seoul Station / Incheon Airport
@@ -157,7 +170,7 @@ export default async function AtelierDetailPage({
           </div>
         </div>
       </section>
-      
+
       {/* Floating Actions */}
       <AtelierActions atelier={atelier} />
     </main>

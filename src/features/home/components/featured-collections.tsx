@@ -17,7 +17,7 @@ const COLLECTIONS: ICollection[] = [
     id: "Ritual",
     title: "Sacred Silence",
     subtitle: "Ritual",
-    heroImage: "/images/hero/slide-1.jpg",
+    heroImage: "/images/ritual/hero.jpg",
     description: "",
     atelierSlugs: [],
   },

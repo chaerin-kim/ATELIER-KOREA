@@ -7,9 +7,11 @@ import { Button } from "@/components/ui/button";
 
 /** Hero 슬라이드 이미지 목록 */
 const HERO_SLIDES = [
-  { src: "/images/hero/slide-1.jpg", alt: "한국 전통 한옥 마당" },
+  { src: "/images/hero/slide-1.png", alt: "한국 전통 한옥 마당" },
   { src: "/images/hero/slide-2.jpg", alt: "한국 대나무숲 설경" },
   { src: "/images/hero/slide-3.jpg", alt: "한국 해안 등대 일몰" },
+  { src: "/images/hero/slide-4.png", alt: "한국 자연 풍경" },
+  { src: "/images/hero/slide-5.jpg", alt: "한국 전통 음식 문화" },
 ];
 
 const SLIDE_DURATION = 6000;
@@ -19,6 +21,10 @@ export function Hero() {
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+  }, []);
+
+  const goToSlide = useCallback((index: number) => {
+    setCurrentSlide(index);
   }, []);
 
   useEffect(() => {
@@ -36,10 +42,25 @@ export function Hero() {
             className="absolute inset-0 transition-opacity duration-[1500ms] ease-in-out"
             style={{ opacity: index === currentSlide ? 1 : 0 }}
           >
+            {/* Fill layer (blurred) - keeps hero feeling full even when main image is contain */}
+            <img
+              src={slide.src}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 h-full w-full object-cover blur-xl scale-110"
+              decoding="async"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-black/10"
+            />
+
+            {/* Main layer (not cropped) */}
             <img
               src={slide.src}
               alt={slide.alt}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 h-full w-full object-contain"
+              decoding="async"
             />
           </div>
         ))}
@@ -63,7 +84,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tight"
+          className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight"
         >
           Heritage Atelier
           <br />
@@ -98,16 +119,17 @@ export function Hero() {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-4">
+      <div className="absolute bottom-28 md:bottom-32 left-1/2 -translate-x-1/2 z-20 flex gap-4">
         {HERO_SLIDES.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`h-[1px] transition-all duration-500 ${index === currentSlide
+            onClick={() => goToSlide(index)}
+            className={`h-[1px] transition-all duration-500 cursor-pointer ${index === currentSlide
               ? "w-12 bg-white/90"
               : "w-6 bg-white/30 hover:bg-white/50"
               }`}
-            aria-label={`슬라이드 ${index + 1}`}
+            aria-label={`슬라이드 ${index + 1}로 이동`}
+            type="button"
           />
         ))}
       </div>
@@ -119,7 +141,7 @@ export function Hero() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-white/30 text-xs tracking-[0.2em] uppercase"
       >
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center gap-3">
           <span className="font-light">Scroll</span>
           <div className="w-[1px] h-8 bg-gradient-to-b from-white/40 to-transparent animate-pulse" />
         </div>

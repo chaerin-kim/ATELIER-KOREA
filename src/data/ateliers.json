@@ -3,10 +3,11 @@
     "slug": "yangyang-ocean-retreat",
     "displayName": "Yangyang Ocean Retreat",
     "collectionId": "Sea",
-    "heroImage": "/images/hero/slide-3.jpg",
+    "heroImage": "/images/sea/yangyang-hero.jpg",
     "galleryImages": [
       "/images/sea/gallery-1.jpg",
-      "/images/sea/gallery-2.jpg"
+      "/images/sea/gallery-2.jpg",
+      "/images/sea/yangyang-beach.png"
     ],
     "conceptLines": [
       "Not the crowded beach.",
@@ -22,19 +23,23 @@
       {
         "name": "The Wave House",
         "description": "Minimalist concrete facing the horizon.",
-        "type": "Boutique"
+        "type": "Boutique",
+        "image": "/images/sea/wave-house.jpg"
       },
       {
         "name": "Pine Stay",
         "description": "Hidden in the coastal forest.",
-        "type": "Cabin"
+        "type": "Cabin",
+        "image": "/images/sea/gallery2.jpg"
       }
     ],
     "tableHighlights": [
       {
         "name": "Sokcho Mulhoe",
+        "dish": "Spicy Raw Fish Soup",
         "description": "Icy raw fish soup, only at dawn.",
-        "type": "Local"
+        "type": "Local",
+        "image": "/images/sea/sokcho-mulhoe.jpg"
       }
     ],
     "howToArrive": {
@@ -52,13 +57,18 @@
         { "id": "vastness", "label": "Vastness", "generatedLine": "Before the horizon, I am infinite." }
       ],
       "cardTemplate": "/images/hero/slide-3.jpg"
+    },
+    "location": {
+      "region": "Yangyang",
+      "lat": 38.0754,
+      "lng": 128.6189
     }
   },
   {
     "slug": "busan-shadow-port",
     "displayName": "Busan Shadow Port",
     "collectionId": "Sea",
-    "heroImage": "/images/hero/slide-3.jpg",
+    "heroImage": "/images/sea/busan-hero.jpg",
     "galleryImages": [
       "/images/sea/gallery-1.jpg",
       "/images/sea/gallery-2.jpg"
@@ -77,14 +87,17 @@
       {
         "name": "Dock 7 Guesthouse",
         "description": "Industrial-chic near the waterfront.",
-        "type": "Guesthouse"
+        "type": "Guesthouse",
+        "image": "/images/sea/gallery3.jpg"
       }
     ],
     "tableHighlights": [
       {
         "name": "Jagalchi Sashimi",
+        "dish": "Fresh Sashimi",
         "description": "Market-fresh, no frills.",
-        "type": "Market"
+        "type": "Market",
+        "image": "/images/sea/jagalchi-sushi.jpg"
       }
     ],
     "howToArrive": {
@@ -102,13 +115,18 @@
         { "id": "plans", "label": "Plans for chance", "generatedLine": "I let the wind decide my route." }
       ],
       "cardTemplate": "/images/hero/slide-3.jpg"
+    },
+    "location": {
+      "region": "Busan",
+      "lat": 35.1796,
+      "lng": 129.0756
     }
   },
   {
     "slug": "andong-silent-house",
     "displayName": "Andong Silent House",
     "collectionId": "Ritual",
-    "heroImage": "/images/hero/slide-1.jpg",
+    "heroImage": "/images/ritual/andong-hero.jpg",
     "galleryImages": [
       "/images/ritual/gallery1.jpg",
       "/images/ritual/gallery3.jpg"
@@ -127,14 +145,17 @@
       {
         "name": "Hahoe Hanok Stay",
         "description": "Sleep where scholars once studied.",
-        "type": "Heritage"
+        "type": "Heritage",
+        "image": "/images/ritual/gallery1.jpg"
       }
     ],
     "tableHighlights": [
       {
         "name": "Andong Jjimdak",
+        "dish": "Braised Chicken",
         "description": "The original braised chicken, since the Joseon era.",
-        "type": "Traditional"
+        "type": "Traditional",
+        "image": "/images/ritual/jjimdak.jpg"
       }
     ],
     "howToArrive": {
@@ -151,7 +172,12 @@
         { "id": "apology", "label": "A long-overdue apology", "generatedLine": "The quiet house heard what I could not say." },
         { "id": "nothing", "label": "Nothing at all", "generatedLine": "Sometimes the deepest letter is the one never written." }
       ],
-      "cardTemplate": "/images/hero/slide-1.jpg"
+      "cardTemplate": "/images/ritual/hero.jpg"
+    },
+    "location": {
+      "region": "Andong",
+      "lat": 36.5684,
+      "lng": 128.7294
     }
   },
   {
@@ -177,14 +203,17 @@
       {
         "name": "The Paper Room",
         "description": "Walls lined with hanji, light filtered through tradition.",
-        "type": "Boutique"
+        "type": "Boutique",
+        "image": "/images/grain/gallery1.jpg"
       }
     ],
     "tableHighlights": [
       {
         "name": "Bibimbap Alley",
+        "dish": "Jeonju Bibimbap",
         "description": "The birthplace of Korea's most iconic dish.",
-        "type": "Heritage"
+        "type": "Heritage",
+        "image": "/images/hero/slide-5.png"
       }
     ],
     "howToArrive": {
@@ -202,6 +231,11 @@
         { "id": "translucent", "label": "Translucent and open", "generatedLine": "Light passes through me, and I let it." }
       ],
       "cardTemplate": "/images/grain/gallery3.jpg"
+    },
+    "location": {
+      "region": "Jeonju",
+      "lat": 35.8242,
+      "lng": 127.1480
     }
   },
   {
@@ -211,7 +245,7 @@
     "heroImage": "/images/hero/slide-2.jpg",
     "galleryImages": [
       "/images/raw/gallery3.jpg",
-      "/images/raw/gallery-2.jpg"
+      "/images/raw/gallery1.jpg"
     ],
     "conceptLines": [
       "Born from fire.",
@@ -227,14 +261,17 @@
       {
         "name": "Stone Wind House",
         "description": "Volcanic basalt walls, ocean on three sides.",
-        "type": "Villa"
+        "type": "Villa",
+        "image": "/images/raw/gallery1.jpg"
       }
     ],
     "tableHighlights": [
       {
         "name": "Haenyeo Abalone",
+        "dish": "Fresh Abalone Porridge",
         "description": "Diving women catch your dinner at dawn.",
-        "type": "Local"
+        "type": "Local",
+        "image": "/images/raw/haenyeo-abalone.jpg"
       }
     ],
     "howToArrive": {
@@ -252,6 +289,140 @@
         { "id": "water", "label": "Water", "generatedLine": "The sea carved me, and I became a shore." }
       ],
       "cardTemplate": "/images/hero/slide-2.jpg"
+    },
+    "location": {
+      "region": "Jeju",
+      "lat": 33.4996,
+      "lng": 126.5312
+    }
+  },
+  {
+    "slug": "seoul-temple-kitchen",
+    "displayName": "Seoul Temple Kitchen",
+    "collectionId": "Taste",
+    "heroImage": "/images/taste/temple-hero.jpg",
+    "galleryImages": [
+      "/images/taste/gallery1.jpg",
+      "/images/taste/gallery2.jpg"
+    ],
+    "conceptLines": [
+      "Before flavor.",
+      "There was intention.",
+      "Temple cuisine speaks.",
+      "In whispers of tradition."
+    ],
+    "rarityText": "Only 3 temples in Seoul offer authentic temple cuisine experiences.",
+    "recommendedNights": 1,
+    "bestSeason": "All seasons",
+    "paceTag": "Deep",
+    "stayRecommendations": [
+      {
+        "name": "Temple Stay Guesthouse",
+        "description": "Sleep where monks once meditated, wake to temple bells.",
+        "type": "Heritage",
+        "image": "/images/taste/gallery1.jpg"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Balwoo Gongyang",
+        "dish": "Temple Cuisine Course",
+        "description": "108 ingredients, zero meat. The purest expression of Korean flavors.",
+        "type": "Sacred",
+        "image": "/images/taste/temple-cuisine.jpg"
+      },
+      {
+        "name": "Lotus Tea Ceremony",
+        "dish": "Traditional Tea Service",
+        "description": "Hand-picked lotus leaves, brewed in silence.",
+        "type": "Ritual",
+        "image": "/images/taste/lotus-tea.jpg"
+      }
+    ],
+    "howToArrive": {
+      "time": "45min from Seoul Station",
+      "method": "Subway Line 3 to Anguk Station",
+      "transferSimplicity": "Direct"
+    },
+    "piece": {
+      "id": "piece-temple-kitchen",
+      "baseName": "The Sacred Meal",
+      "question": "What does mindful eating teach you?",
+      "choices": [
+        { "id": "gratitude", "label": "Gratitude for simplicity", "generatedLine": "In each grain of rice, I found abundance." },
+        { "id": "presence", "label": "Being fully present", "generatedLine": "The meal became meditation, the taste became prayer." },
+        { "id": "connection", "label": "Connection to nature", "generatedLine": "I tasted the earth, the rain, the seasons in every bite." }
+      ],
+      "cardTemplate": "/images/taste/temple-hero.jpg"
+    },
+    "location": {
+      "region": "Seoul",
+      "lat": 37.5665,
+      "lng": 126.9780
+    }
+  },
+  {
+    "slug": "seoraksan-wellness-retreat",
+    "displayName": "Seoraksan Wellness Retreat",
+    "collectionId": "Raw",
+    "heroImage": "/images/raw/seoraksan/seoraksan-hero.jpg",
+    "galleryImages": [
+      "/images/raw/seoraksan/seoraksan-pool.jpg",
+      "/images/raw/seoraksan/seoraksan-view.jpg"
+    ],
+    "conceptLines": [
+      "Where mountains meet the sea.",
+      "And time dissolves in warmth.",
+      "Ulsan Rock watches over.",
+      "Your perfect surrender."
+    ],
+    "rarityText": "The only infinity pool facing both Seoraksan peaks and the East Sea.",
+    "recommendedNights": 2,
+    "bestSeason": "Winter",
+    "paceTag": "Slow",
+    "stayRecommendations": [
+      {
+        "name": "Delphino Suite",
+        "description": "Floor-to-ceiling windows frame Ulsan Rock. Private onsen overlooks the infinite blue.",
+        "type": "Luxury Resort",
+        "image": "/images/raw/seoraksan/seoraksan-pool.jpg"
+      },
+      {
+        "name": "Mountain View Spa Room",
+        "description": "Wake to snow-capped peaks, sleep to the sound of distant waves.",
+        "type": "Wellness Suite",
+        "image": "/images/raw/seoraksan/seoraksan-view.jpg"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Onsen Tea Service",
+        "dish": "Hot Spring Mineral Tea",
+        "description": "Brewed with the same mineral-rich water that fills your private bath.",
+        "type": "Wellness",
+        "image": "/images/raw/seoraksan/Onsen Tea Service.jpg"
+      }
+    ],
+    "howToArrive": {
+      "time": "3h from Seoul",
+      "method": "Express bus to Sokcho → Resort shuttle",
+      "transferSimplicity": "1 Transfer"
+    },
+    "piece": {
+      "id": "piece-seoraksan-wellness",
+      "baseName": "The Mountain Mirror",
+      "question": "What do you see in the reflection between mountain and sea?",
+      "choices": [
+        { "id": "balance", "label": "Perfect balance", "generatedLine": "Between peak and depth, I found my center." },
+        { "id": "infinity", "label": "Endless possibility", "generatedLine": "The horizon taught me that endings are just beginnings." },
+        { "id": "peace", "label": "Deep peace", "generatedLine": "In the warm embrace of mineral waters, I let go of everything." }
+      ],
+      "cardTemplate": "/images/raw/seoraksan/seoraksan-hero.jpg"
+    },
+    "location": {
+      "region": "Sokcho",
+      "lat": 38.1199,
+      "lng": 128.4654
     }
   }
 ]

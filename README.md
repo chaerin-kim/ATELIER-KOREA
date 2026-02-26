@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ATELIER KOREA
 
-## Getting Started
+> *"Not loud. Not everywhere. Not for everyone. For travelers with taste."*
 
-First, run the development server:
+한국의 숨겨진 지방 유산을 **큐레이션된 럭셔리 여행 경험**으로 재해석한 웹 플랫폼입니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 프로젝트 개요
+
+**ATELIER KOREA**는 외국인 여행자가 서울·부산 같은 대도시를 넘어, 한국 지방의 고유한 문화유산과 자연을 발견하도록 설계된 큐레이션 여행 플랫폼입니다.
+
+'아틀리에(Atelier)'라는 단어는 예술가의 작업실을 뜻합니다. 이 프로젝트는 각 여행지를 하나의 **작품**처럼 다루며, 여행자가 단순히 장소를 '방문'하는 것이 아니라 감각적으로 **경험하고 수집**하는 구조를 만듭니다.
+
+---
+
+## 왜 이 프로젝트인가 — 기획 배경
+
+### 문제 인식
+
+한국을 방문하는 외국인 관광객의 대다수는 **서울 → 부산 → (선택적) 제주**라는 고정된 루트를 따릅니다. 안동, 양양, 전주 같은 지방 도시는 한국의 가장 깊은 문화적 자산을 품고 있지만, 외국인에게는 거의 알려져 있지 않습니다.
+
+기존 관광 플랫폼(TripAdvisor, Google Maps 등)은 정보를 나열할 뿐, **왜 그곳에 가야 하는지에 대한 감정적 동기**를 만들지 못합니다.
+
+### 핵심 마찰 — "지방까지 갔는데 별로이면 어쩌지?"
+
+외국인이 한국 지방 여행을 망설이는 가장 큰 이유는 **기대 대비 실망의 리스크**입니다. 서울에서 2~3시간을 투자해 낯선 곳까지 갔는데, 기대한 만큼의 경험이 아니라면? 이 불안은 정보 부족에서 비롯됩니다 — 검색해도 영어 리뷰가 거의 없고, 있어도 투박한 관광 사진뿐이라 **"과연 갈 만한 곳인가"**를 판단할 수 없습니다.
+
+ATELIER KOREA는 이 심리적 장벽을 **두 가지 축**으로 돌파합니다:
+
+1. **고급스러운 비주얼로 기대치를 확신으로 전환** — 에디토리얼급 이미지와 시네마틱 레이아웃은 "이 정도 퀄리티로 보여주는 곳이라면 실제로도 좋을 것"이라는 신뢰를 만듭니다. 허름한 관광 안내 사진이 아닌, 매거진 화보 수준의 비주얼이 장소의 가치를 사전에 증명합니다.
+2. **취향 기반 브랜딩으로 "나를 위한 곳"이라는 확신** — 모든 여행지를 동일하게 나열하지 않고, Sea·Ritual·Grain·Raw 네 가지 감성 테마로 분류합니다. 여행자는 자신의 취향에 맞는 컬렉션을 선택하는 순간, **"이건 내 스타일"**이라는 심리적 소유감을 갖게 되고, 이것이 "가봐야 안다"는 불확실성을 "나에게 맞는 곳"이라는 확신으로 바꿉니다.
+
+### 해결 방향
+
+ATELIER KOREA는 정보 전달이 아닌 **감성적 큐레이션**을 통해 여행 동기를 만듭니다.
+
+| 기존 관광 플랫폼 | ATELIER KOREA |
+|---|---|
+| 장소 리스트 나열 | 테마 기반 컬렉션 큐레이션 |
+| 별점·리뷰 중심 | 시적 카피·감각적 스토리텔링 |
+| "뭐가 있나" (What) | "왜 가야 하나" (Why) |
+| 대중적·범용적 | 배타적·선별적 |
+
+---
+
+## 타겟 유저 — 누구를 위한 서비스인가
+
+### 핵심 타겟: "Quiet Luxury Traveler"
+
+- **연령대**: 25–40세 밀레니얼·Gen Z
+- **특성**: 디자인·문화에 민감하고, 대중 관광지보다 **자기만의 발견**을 중시하는 여행자
+- **여행 성향**: Slow Travel, 로컬 경험, 사진보다 분위기를 중시
+- **레퍼런스 브랜드 감성**: Aesop, Kinfolk, Cereal Magazine, Aman Resorts
+
+이들은 "모두가 가는 곳"이 아닌, **"아무도 모르는 곳을 먼저 발견한 나"**에서 만족을 느끼는 사람들입니다.
+
+---
+
+## 작동하는 심리 — 왜 지방으로 가게 만드는가
+
+### 1. 희소성의 심리 (Scarcity & Exclusivity)
+
+> *"Visited by fewer than 3% of foreign travelers."*
+
+각 아틀리에 페이지에 표시되는 희소성 문구는, 이 장소가 **대중에게 알려지지 않은 특별한 곳**이라는 인식을 만듭니다. 사람들은 흔한 것보다 희귀한 것에 더 높은 가치를 부여합니다.
+
+### 2. 수집의 욕구 (Collection & Completion)
+
+여행지를 방문한 후 질문에 답하면 **개인화된 시적 카드(Piece)**를 발급받습니다. 이 수집 메커니즘은 게이미피케이션 요소로, 다음 장소를 방문하고 싶은 동기를 자연스럽게 형성합니다.
+
+- 4개 컬렉션 (Sea, Ritual, Grain, Raw)
+- 각 컬렉션 안의 아틀리에를 완료하면 Piece 획득
+- "모든 Piece를 모으고 싶다"는 완성 욕구 자극
+
+### 3. 자기 서사의 투영 (Personal Narrative)
+
+> *"What does the ocean teach you?" → "The tide knows no haste. Neither do I."*
+
+각 아틀리에의 Piece 발급 과정에서 여행자는 **자신의 감정을 선택**하고, 그에 맞는 문장을 받습니다. 이 과정은 장소를 단순한 목적지가 아닌 **자기 이야기의 일부**로 만들어, 감정적 애착을 극대화합니다.
+
+### 4. 에디토리얼 미학 (Editorial Aesthetic)
+
+Playfair Display 세리프 폰트, stone 톤 컬러 팔레트, 최소한의 UI, 시적 카피라이팅 — 이 모든 디자인 선택은 **"이 플랫폼이 추천하는 곳이라면 신뢰할 수 있다"**는 브랜드 권위를 구축합니다. 패션 매거진이 옷을 팔듯, 우리는 여행을 큐레이팅합니다.
+
+### 5. 반대급부의 매력 (Counter-positioning)
+
+> *"Not loud. Not everywhere. Not for everyone."*
+
+히어로 카피부터 의도적으로 **대중 관광의 반대**를 선언합니다. "모두를 위한 것이 아니다"라는 메시지는 역설적으로 타겟 유저의 자기 정체성과 맞닿아, **"이건 나를 위한 서비스"**라는 강한 소속감을 만듭니다.
+
+### 6. 프리미엄 비주얼이 만드는 신뢰 (Visual Trust Building)
+
+> *"멀리 갔는데 별로이면 어쩌지?"를 "이 정도 퀄리티면 분명 좋을 것"으로 전환*
+
+외국인이 한국 지방 여행을 결심하기까지의 가장 큰 장벽은 **기대 실망 리스크**입니다. 이 프로젝트는 모든 페이지에서 에디토리얼급 고퀄리티 이미지, 시네마틱 풀스크린 히어로, 매거진 톤의 레이아웃을 유지합니다. 이 일관된 프리미엄 비주얼은 단순한 디자인 선택이 아니라, **"이 플랫폼이 큐레이팅한 곳이라면 실패하지 않을 것"**이라는 브랜드 신뢰를 구축하는 핵심 장치입니다.
+
+### 7. 취향 매칭으로 불확실성 제거 (Taste-based Matching)
+
+대중 관광 사이트는 모든 여행지를 같은 포맷으로 보여줍니다. ATELIER KOREA는 **Sea · Ritual · Grain · Raw** 네 가지 감성 컬렉션으로 분류해, 여행자가 자신의 취향에 맞는 테마를 직접 선택하게 합니다. "바다가 좋은 사람"에게 양양을, "고즈넉한 전통이 좋은 사람"에게 안동을 보여주는 것 — 이 매칭 과정 자체가 **"나에게 맞는 곳"이라는 심리적 확신**을 만들어, 지방까지 가는 시간·비용 투자에 대한 불안을 해소합니다.
+
+---
+
+## 핵심 기능 구조
+
+```
+ATELIER KOREA
+├── 홈 — 시네마틱 히어로 슬라이드 + 4개 컬렉션 프리뷰
+├── Collections — 테마별 여행 컬렉션 (Sea / Ritual / Grain / Raw)
+│   └── Collection Detail — 테마 설명 + 소속 아틀리에 카드 목록
+├── Atelier Detail — 개별 여행지 상세 (컨셉 문구 / 숙소 / 식사 / 교통)
+│   └── Complete Atelier — 질문 응답 → 개인화 Piece 카드 발급
+├── Route Builder — 일수·페이스·테마 입력 → 맞춤 루트 큐레이션
+└── My Collection — 저장한 아틀리에 + 수집한 Piece 카드 모아보기
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4개 컬렉션 테마
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| 컬렉션 | 키워드 | 대표 지역 | 감성 |
+|---|---|---|---|
+| **Sea** | 바다, 수평선, 고요 | 양양, 부산 영도 | 파도 소리 속 사색 |
+| **Ritual** | 의례, 침묵, 전통 | 안동 하회마을 | 시간이 멈춘 고택 |
+| **Grain** | 흙, 질감, 수공예 | 전주 한지 | 손끝에 닿는 전통 |
+| **Raw** | 화산, 바람, 원시 | 제주 남쪽 해안 | 자연 그대로의 거친 아름다움 |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 기술 스택
 
-To learn more about Next.js, take a look at the following resources:
+| 영역 | 기술 |
+|---|---|
+| Framework | Next.js 16 (App Router, RSC) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 |
+| Animation | Framer Motion |
+| State | Zustand (persist middleware) |
+| UI Components | Radix UI + Shadcn UI |
+| Font | Playfair Display (serif) + Inter (sans) |
+| Icons | Lucide React |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 시작하기
 
-## Deploy on Vercel
+```powershell
+# 의존성 설치
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 개발 서버 실행
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[http://localhost:3000](http://localhost:3000) 에서 확인할 수 있습니다.
+
+---
+
+## 향후 확장 방향
+
+- **실제 숙소·식당 연동** — 예약 API 통합 (Booking.com, Naver Place 등)
+- **다국어 지원** — 영어 외 일본어·중국어·프랑스어
+- **AI 큐레이션** — 사용자 취향 학습 기반 맞춤 루트 생성
+- **소셜 공유** — 수집한 Piece 카드를 Instagram Story 포맷으로 공유
+- **오프라인 연계** — QR 코드 기반 현장 Piece 발급 (실제 방문 인증)
+
+---
+
+<p align="center">
+  <em>한국의 깊은 곳을 발견하는 여행은, 큐레이터의 시선에서 시작됩니다.</em>
+</p>

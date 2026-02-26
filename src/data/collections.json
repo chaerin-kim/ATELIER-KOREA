@@ -11,7 +11,7 @@
     "id": "Ritual",
     "title": "Sacred Silence",
     "subtitle": "Timeless practices in modern life.",
-    "heroImage": "/images/hero/slide-1.jpg",
+    "heroImage": "/images/ritual/hero.jpg",
     "description": "Step into spaces designed for reflection. From ancient temples to minimalist tea rooms, discover the art of doing nothing.",
     "atelierSlugs": ["andong-silent-house"]
   },
@@ -29,6 +29,14 @@
     "subtitle": "Unfiltered nature.",
     "heroImage": "/images/hero/slide-2.jpg",
     "description": "For those who crave the untamed. Volcanic rock, dense forests, and the raw beauty of Korea's wild landscapes.",
-    "atelierSlugs": ["jeju-stone-villa"]
+    "atelierSlugs": ["jeju-stone-villa", "seoraksan-wellness-retreat"]
+  },
+  {
+    "id": "Taste",
+    "title": "Heritage Flavors",
+    "subtitle": "Stories told through taste.",
+    "heroImage": "/images/hero/slide-5.jpg",
+    "description": "Where every dish carries centuries of tradition. From temple cuisine to royal court recipes, discover Korea's culinary soul through intimate dining experiences.",
+    "atelierSlugs": ["seoul-temple-kitchen"]
   }
 ]

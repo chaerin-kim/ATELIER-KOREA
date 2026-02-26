@@ -1,5 +1,5 @@
 // Common Types
-export type CollectionTheme = 'Sea' | 'Ritual' | 'Grain' | 'Raw';
+export type CollectionTheme = 'Sea' | 'Ritual' | 'Grain' | 'Raw' | 'Taste';
 export type PaceType = 'Slow' | 'Balanced' | 'Deep';
 
 // Entity: Collection
@@ -24,6 +24,8 @@ export interface ITable {
   name: string;
   dish: string;
   description: string;
+  type?: string;
+  image?: string;
 }
 
 // Entity: Piece (Collectible Card)
@@ -38,7 +40,7 @@ export interface IPiece {
   baseName: string; // e.g., "Harbor Dawn"
   question: string;
   choices: IPieceChoice[];
-  cardTemplate: 'type-C'; // MVP fixed
+  cardTemplate: string; // MVP fixed
 }
 
 // Entity: Atelier

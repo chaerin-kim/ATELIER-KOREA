@@ -61,26 +61,26 @@ export default function RouteBuilderPage() {
   };
 
   return (
-    <main className="min-h-screen pt-24 pb-20 px-4 md:px-8 bg-stone-50 max-w-4xl mx-auto">
-      <header className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-serif text-stone-900 mb-4">Travel Curator</h1>
-        <p className="text-stone-500 font-light max-w-lg mx-auto">
+    <main className="h-screen flex flex-col justify-center px-4 md:px-8 bg-stone-50 max-w-4xl mx-auto">
+      <header className="mb-8 text-center">
+        <h1 className="text-3xl md:text-4xl font-serif text-stone-900 mb-3">Travel Curator</h1>
+        <p className="text-stone-500 font-light max-w-2xl mx-auto whitespace-nowrap text-sm md:text-base">
           Tell us your time and tempo. We will curate a heritage journey for you.
         </p>
       </header>
 
       {step === 'input' && (
-        <div className="bg-white p-8 md:p-12 rounded-sm shadow-sm border border-stone-100 space-y-10">
+        <div className="bg-white p-6 md:p-8 rounded-sm shadow-sm border border-stone-100 space-y-8">
           {/* Duration Input */}
           <div className="space-y-4">
-            <label className="text-sm uppercase tracking-widest text-stone-400 font-medium">How many days?</label>
-            <div className="flex gap-4">
+            <label className="block text-xs uppercase tracking-widest text-stone-400 font-medium">How many days?</label>
+            <div className="flex gap-3 justify-center">
               {[2, 3, 4, 5, 6, 7].map((d) => (
                 <button
                   key={d}
                   onClick={() => setDuration(d)}
                   className={cn(
-                    "w-12 h-12 rounded-full flex items-center justify-center text-lg font-serif transition-all",
+                    "w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-base md:text-lg font-serif transition-all leading-none",
                     duration === d ? "bg-stone-900 text-white" : "bg-stone-100 text-stone-600 hover:bg-stone-200"
                   )}
                 >
@@ -92,14 +92,14 @@ export default function RouteBuilderPage() {
 
           {/* Pace Input */}
           <div className="space-y-4">
-            <label className="text-sm uppercase tracking-widest text-stone-400 font-medium">Your Pace</label>
-            <div className="grid grid-cols-3 gap-4">
+            <label className="block text-xs uppercase tracking-widest text-stone-400 font-medium">Your Pace</label>
+            <div className="grid grid-cols-3 gap-3">
               {(['Slow', 'Balanced', 'Deep'] as PaceType[]).map((p) => (
                 <button
                   key={p}
                   onClick={() => setPace(p)}
                   className={cn(
-                    "py-4 px-2 rounded-sm border transition-all text-center",
+                    "py-3 px-2 rounded-sm border transition-all text-center text-sm md:text-base",
                     pace === p
                       ? "border-stone-900 bg-stone-50 text-stone-900 font-medium"
                       : "border-stone-200 text-stone-500 hover:border-stone-400"
@@ -113,22 +113,23 @@ export default function RouteBuilderPage() {
 
           {/* Theme Input */}
           <div className="space-y-4">
-            <label className="text-sm uppercase tracking-widest text-stone-400 font-medium">Preferred Theme</label>
+            <label className="block text-xs uppercase tracking-widest text-stone-400 font-medium">Preferred Theme</label>
             <select
               value={theme}
               onChange={(e) => setTheme(e.target.value as any)}
-              className="w-full p-4 border border-stone-200 rounded-sm bg-transparent font-serif text-lg focus:outline-none focus:border-stone-900"
+              className="w-full p-3 border border-stone-200 rounded-sm bg-transparent font-serif text-base md:text-lg focus:outline-none focus:border-stone-900"
             >
               <option value="Any">Surprise Me (Any Theme)</option>
               <option value="Sea">Sea - The Infinite Horizon</option>
               <option value="Ritual">Ritual - Sacred Silence</option>
               <option value="Grain">Grain - Earth's Texture</option>
               <option value="Raw">Raw - Wild Elements</option>
+              <option value="Taste">Taste - Heritage Flavors</option>
             </select>
           </div>
 
-          <div className="pt-8 flex justify-center">
-            <Button size="lg" onClick={handleGenerate} className="px-12 text-lg h-14 bg-stone-900 text-stone-50">
+          <div className="flex justify-center pt-2">
+            <Button size="lg" onClick={handleGenerate} className="px-8 md:px-12 text-base md:text-lg h-12 md:h-14 bg-stone-900 text-stone-50">
               Curate My Journey <ArrowRight className="ml-2" />
             </Button>
           </div>
