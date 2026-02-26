@@ -1,0 +1,257 @@
+[
+  {
+    "slug": "yangyang-ocean-retreat",
+    "displayName": "Yangyang Ocean Retreat",
+    "collectionId": "Sea",
+    "heroImage": "/images/hero/slide-3.jpg",
+    "galleryImages": [
+      "/images/sea/gallery-1.jpg",
+      "/images/sea/gallery-2.jpg"
+    ],
+    "conceptLines": [
+      "Not the crowded beach.",
+      "But the silent dawn.",
+      "Where waves speak.",
+      "And thoughts settle."
+    ],
+    "rarityText": "Visited by fewer than 3% of foreign travelers.",
+    "recommendedNights": 2,
+    "bestSeason": "Autumn",
+    "paceTag": "Slow",
+    "stayRecommendations": [
+      {
+        "name": "The Wave House",
+        "description": "Minimalist concrete facing the horizon.",
+        "type": "Boutique"
+      },
+      {
+        "name": "Pine Stay",
+        "description": "Hidden in the coastal forest.",
+        "type": "Cabin"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Sokcho Mulhoe",
+        "description": "Icy raw fish soup, only at dawn.",
+        "type": "Local"
+      }
+    ],
+    "howToArrive": {
+      "time": "2.5h from Seoul",
+      "method": "Express bus from Dong Seoul → Yangyang",
+      "transferSimplicity": "Direct"
+    },
+    "piece": {
+      "id": "piece-yangyang",
+      "baseName": "The Yangyang Wave",
+      "question": "What does the ocean teach you?",
+      "choices": [
+        { "id": "patience", "label": "Patience", "generatedLine": "The tide knows no haste. Neither do I." },
+        { "id": "letting-go", "label": "Letting go", "generatedLine": "Each wave releases. So shall I." },
+        { "id": "vastness", "label": "Vastness", "generatedLine": "Before the horizon, I am infinite." }
+      ],
+      "cardTemplate": "/images/hero/slide-3.jpg"
+    }
+  },
+  {
+    "slug": "busan-shadow-port",
+    "displayName": "Busan Shadow Port",
+    "collectionId": "Sea",
+    "heroImage": "/images/hero/slide-3.jpg",
+    "galleryImages": [
+      "/images/sea/gallery-1.jpg",
+      "/images/sea/gallery-2.jpg"
+    ],
+    "conceptLines": [
+      "Where the city fades.",
+      "And the sea takes over.",
+      "A port of quiet trades.",
+      "And untold stories."
+    ],
+    "rarityText": "Overlooked by 90% of Busan visitors.",
+    "recommendedNights": 1,
+    "bestSeason": "Spring",
+    "paceTag": "Balanced",
+    "stayRecommendations": [
+      {
+        "name": "Dock 7 Guesthouse",
+        "description": "Industrial-chic near the waterfront.",
+        "type": "Guesthouse"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Jagalchi Sashimi",
+        "description": "Market-fresh, no frills.",
+        "type": "Market"
+      }
+    ],
+    "howToArrive": {
+      "time": "2.5h from Seoul",
+      "method": "KTX to Busan Station",
+      "transferSimplicity": "Direct"
+    },
+    "piece": {
+      "id": "piece-busan",
+      "baseName": "The Shadow Trade",
+      "question": "What do you trade at the port?",
+      "choices": [
+        { "id": "noise", "label": "Noise for silence", "generatedLine": "I traded the noise for the sound of the sea." },
+        { "id": "speed", "label": "Speed for depth", "generatedLine": "I slowed down and found the deep." },
+        { "id": "plans", "label": "Plans for chance", "generatedLine": "I let the wind decide my route." }
+      ],
+      "cardTemplate": "/images/hero/slide-3.jpg"
+    }
+  },
+  {
+    "slug": "andong-silent-house",
+    "displayName": "Andong Silent House",
+    "collectionId": "Ritual",
+    "heroImage": "/images/hero/slide-1.jpg",
+    "galleryImages": [
+      "/images/ritual/gallery1.jpg",
+      "/images/ritual/gallery3.jpg"
+    ],
+    "conceptLines": [
+      "The house remembers.",
+      "What the city forgot.",
+      "Silence is not empty.",
+      "It is full of answers."
+    ],
+    "rarityText": "One of the oldest continually inhabited villages.",
+    "recommendedNights": 2,
+    "bestSeason": "Autumn",
+    "paceTag": "Deep",
+    "stayRecommendations": [
+      {
+        "name": "Hahoe Hanok Stay",
+        "description": "Sleep where scholars once studied.",
+        "type": "Heritage"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Andong Jjimdak",
+        "description": "The original braised chicken, since the Joseon era.",
+        "type": "Traditional"
+      }
+    ],
+    "howToArrive": {
+      "time": "3h from Seoul",
+      "method": "Express bus from Dong Seoul → Andong",
+      "transferSimplicity": "1 Transfer"
+    },
+    "piece": {
+      "id": "piece-andong",
+      "baseName": "The Silent Letter",
+      "question": "What would you write in silence?",
+      "choices": [
+        { "id": "gratitude", "label": "A letter of gratitude", "generatedLine": "In silence, I found the words I owed." },
+        { "id": "apology", "label": "A long-overdue apology", "generatedLine": "The quiet house heard what I could not say." },
+        { "id": "nothing", "label": "Nothing at all", "generatedLine": "Sometimes the deepest letter is the one never written." }
+      ],
+      "cardTemplate": "/images/hero/slide-1.jpg"
+    }
+  },
+  {
+    "slug": "jeonju-paper-loft",
+    "displayName": "Jeonju Paper Loft",
+    "collectionId": "Grain",
+    "heroImage": "/images/grain/gallery3.jpg",
+    "galleryImages": [
+      "/images/grain/gallery1.jpg",
+      "/images/grain/gallery3.jpg"
+    ],
+    "conceptLines": [
+      "Paper remembers every hand.",
+      "That shaped it.",
+      "In Jeonju, tradition breathes.",
+      "Through texture."
+    ],
+    "rarityText": "Korea's hanji capital, yet unknown to most.",
+    "recommendedNights": 2,
+    "bestSeason": "Spring",
+    "paceTag": "Balanced",
+    "stayRecommendations": [
+      {
+        "name": "The Paper Room",
+        "description": "Walls lined with hanji, light filtered through tradition.",
+        "type": "Boutique"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Bibimbap Alley",
+        "description": "The birthplace of Korea's most iconic dish.",
+        "type": "Heritage"
+      }
+    ],
+    "howToArrive": {
+      "time": "1.5h from Seoul",
+      "method": "KTX to Jeonju Station",
+      "transferSimplicity": "Direct"
+    },
+    "piece": {
+      "id": "piece-jeonju",
+      "baseName": "The Paper Memory",
+      "question": "What texture defines your journey?",
+      "choices": [
+        { "id": "rough", "label": "Rough and honest", "generatedLine": "Like hanji, I am stronger for being unsmooth." },
+        { "id": "layered", "label": "Layered and deep", "generatedLine": "Each layer holds a story yet to be told." },
+        { "id": "translucent", "label": "Translucent and open", "generatedLine": "Light passes through me, and I let it." }
+      ],
+      "cardTemplate": "/images/grain/gallery3.jpg"
+    }
+  },
+  {
+    "slug": "jeju-stone-villa",
+    "displayName": "Jeju Stone Villa",
+    "collectionId": "Raw",
+    "heroImage": "/images/hero/slide-2.jpg",
+    "galleryImages": [
+      "/images/raw/gallery3.jpg",
+      "/images/raw/gallery-2.jpg"
+    ],
+    "conceptLines": [
+      "Born from fire.",
+      "Shaped by wind.",
+      "Jeju is raw.",
+      "And so are you."
+    ],
+    "rarityText": "Away from Jeju City — the island's forgotten coast.",
+    "recommendedNights": 3,
+    "bestSeason": "Winter",
+    "paceTag": "Slow",
+    "stayRecommendations": [
+      {
+        "name": "Stone Wind House",
+        "description": "Volcanic basalt walls, ocean on three sides.",
+        "type": "Villa"
+      }
+    ],
+    "tableHighlights": [
+      {
+        "name": "Haenyeo Abalone",
+        "description": "Diving women catch your dinner at dawn.",
+        "type": "Local"
+      }
+    ],
+    "howToArrive": {
+      "time": "1h from Seoul",
+      "method": "Flight to Jeju International",
+      "transferSimplicity": "Direct"
+    },
+    "piece": {
+      "id": "piece-jeju",
+      "baseName": "The Stone Breath",
+      "question": "What element grounds you?",
+      "choices": [
+        { "id": "wind", "label": "Wind", "generatedLine": "The wind erased my plans. I became free." },
+        { "id": "stone", "label": "Stone", "generatedLine": "Like basalt, I stand where fire once raged." },
+        { "id": "water", "label": "Water", "generatedLine": "The sea carved me, and I became a shore." }
+      ],
+      "cardTemplate": "/images/hero/slide-2.jpg"
+    }
+  }
+]

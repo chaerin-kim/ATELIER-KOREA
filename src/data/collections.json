@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Sea",
+    "title": "The Infinite Horizon",
+    "subtitle": "Where the sky meets the water.",
+    "heroImage": "/images/hero/slide-3.jpg",
+    "description": "Find solace in the rhythmic sound of waves and the endless blue. These ateliers are curated for those who seek clarity and calm by the ocean.",
+    "atelierSlugs": ["yangyang-ocean-retreat", "busan-shadow-port"]
+  },
+  {
+    "id": "Ritual",
+    "title": "Sacred Silence",
+    "subtitle": "Timeless practices in modern life.",
+    "heroImage": "/images/hero/slide-1.jpg",
+    "description": "Step into spaces designed for reflection. From ancient temples to minimalist tea rooms, discover the art of doing nothing.",
+    "atelierSlugs": ["andong-silent-house"]
+  },
+  {
+    "id": "Grain",
+    "title": "Earth's Texture",
+    "subtitle": "Warmth from the soil.",
+    "heroImage": "/images/grain/gallery3.jpg",
+    "description": "Where tradition meets the earth. Discover ateliers woven with the textures of handmade paper, pottery, and aged wood.",
+    "atelierSlugs": ["jeonju-paper-loft"]
+  },
+  {
+    "id": "Raw",
+    "title": "Wild Elements",
+    "subtitle": "Unfiltered nature.",
+    "heroImage": "/images/hero/slide-2.jpg",
+    "description": "For those who crave the untamed. Volcanic rock, dense forests, and the raw beauty of Korea's wild landscapes.",
+    "atelierSlugs": ["jeju-stone-villa"]
+  }
+]
