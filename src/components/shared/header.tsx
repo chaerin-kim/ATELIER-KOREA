@@ -40,6 +40,7 @@ export default function Header() {
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex gap-8 items-center">
+        <Link href="/about" className={linkClass}>About</Link>
         <Link href="/collections" className={linkClass}>Collections</Link>
         <Link href="/route-builder" className={linkClass}>Travel Curator</Link>
         <Link href="/collection" className={linkClass}>My Collection</Link>
@@ -56,6 +57,7 @@ export default function Header() {
       {/* Mobile Nav Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-stone-50 z-40 flex flex-col items-center justify-center gap-8 text-stone-900">
+          <Link href="/about" className="text-2xl font-serif" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
           <Link href="/collections" className="text-2xl font-serif" onClick={() => setIsMobileMenuOpen(false)}>Collections</Link>
           <Link href="/route-builder" className="text-2xl font-serif" onClick={() => setIsMobileMenuOpen(false)}>Travel Curator</Link>
           <Link href="/collection" className="text-2xl font-serif" onClick={() => setIsMobileMenuOpen(false)}>My Collection</Link>
