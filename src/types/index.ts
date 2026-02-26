@@ -17,6 +17,7 @@ export interface IStay {
   name: string;
   description: string;
   type: string; // e.g., "Hanok", "Boutique"
+  image?: string; // Optional image path
 }
 
 // Entity: Table Recommendation
