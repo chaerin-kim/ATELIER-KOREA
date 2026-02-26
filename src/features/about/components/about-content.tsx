@@ -164,7 +164,7 @@ const TEXT = {
   },
   pieceDesc: {
     en: 'At each atelier, you answer a question\n— about silence, texture, the ocean, or the wind.\nYour answer generates a personal poetic card,\na "Piece," that captures your experience in words.\nCollect them all,\nand your journey becomes a story only you can tell.',
-    ko: "각 아틀리에에서 질문에 답합니다.\n침묵, 질감, 바다, 혹은 바람에 대해.\n당신의 답변은 경험을 문장으로 담아낸\n개인화된 시적 카드, \"Piece\"를 생성합니다.\n모든 Piece를 모으면,\n당신의 여행은 오직 당신만이\n들려줄 수 있는 이야기가 됩니다.",
+    ko: "각 아틀리에에서 질문에 답합니다.\n침묵, 질감, 바다, 혹은 바람에 대해 당신의 답변은 경험을 문장으로 담아낸\n개인화된 시적 카드, \"Piece\"를 생성합니다.\n모든 Piece를 모으면, 당신의 여행은 오직 당신만이 들려줄 수 있는 이야기가 됩니다.",
   },
   pieceExample: {
     en: "Example",
@@ -201,20 +201,20 @@ const TEXT = {
     ko: "그것이 핵심입니다.",
   },
   whoP1: {
-    en: "ATELIER KOREA is for the traveler who chooses Aesop over duty-free perfume. Who reads Kinfolk, not guidebooks. Who would rather sit in a 400-year-old courtyard than queue for a photo spot.",
-    ko: "ATELIER KOREA는 면세 향수 대신 이솝을 고르는 여행자를 위한 것입니다. 가이드북이 아닌 킨포크를 읽는 사람. 인증샷 줄 서기보다 400년 된 마당에 앉아 있고 싶은 사람.",
+    en: "ATELIER KOREA is for the traveler\nwho chooses Aesop over duty-free perfume.\nWho reads Kinfolk, not guidebooks.\nWho would rather sit in a 400-year-old courtyard\nthan queue for a photo spot.",
+    ko: "ATELIER KOREA는 면세 향수 대신 이솝을 고르는 여행자를 위한 것입니다.\n가이드북이 아닌 킨포크를 읽는 사람.\n인증샷 줄 서기보다 400년 된 마당에 앉아 있고 싶은 사람.",
   },
   whoP2Before: {
-    en: "These travelers don't need more options — they need ",
-    ko: "이 여행자들에게 필요한 것은 더 많은 선택지가 아닙니다 — ",
+    en: "These travelers don't need more options —\nthey need ",
+    ko: "이 여행자들에게 필요한 것은 더 많은 선택지가 아닙니다 —\n",
   },
   whoP2Bold: {
     en: "better curation.",
-    ko: "더 나은 큐레이션입니다.",
+    ko: "나에게 맞는 큐레이션을 원한다면",
   },
   whoP2After: {
-    en: ' A trusted voice that says: "Go here. Trust us. You won\'t regret it."',
-    ko: ' "여기로 가세요. 우릴 믿으세요. 후회하지 않을 겁니다."라고 말해주는 신뢰할 수 있는 목소리.',
+    en: '\n"Go here. Trust us. You won\'t regret it."',
+    ko: '\n"여기로 가보세요. 후회하지 않을 겁니다."',
   },
 
   // ─── Who Stats ───
@@ -588,11 +588,28 @@ export function AboutContent() {
         </h2>
 
         <div className="space-y-8 text-stone-600 font-light leading-relaxed">
-          <p className="text-lg">{t("whoP1")}</p>
           <p className="text-lg">
-            {t("whoP2Before")}
+            {t("whoP1").split("\n").map((line, i) => (
+              <span key={i}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
+          <p className="text-lg leading-loose">
+            {t("whoP2Before").split("\n").map((line, i, arr) => (
+              <span key={`b-${i}`}>
+                {line}
+                {i < arr.length - 1 && <br />}
+              </span>
+            ))}
             <strong className="text-stone-800">{t("whoP2Bold")}</strong>
-            {t("whoP2After")}
+            {t("whoP2After").split("\n").map((line, i, arr) => (
+              <span key={`a-${i}`}>
+                {line}
+                {i < arr.length - 1 && <br />}
+              </span>
+            ))}
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-stone-200">
